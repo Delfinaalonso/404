@@ -16,7 +16,7 @@ animation-delay: 1s;}
 
 .cortinaola img{width: 1375px;}    
 
-.peces div {display: flex; position: absolute; animation-name: parrafo; animation-duration: 9s;
+.peces div {display: flex; position: absolute; animation-name: parrafo; animation-duration: 9s;animation-delay: 2s;
   }
 .peces img {width: 20%;}
 
