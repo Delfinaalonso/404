@@ -1,0 +1,114 @@
+*{padding: 0; margin: 0;}
+ body {background-image:url(arena.jpg);  
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;}
+
+
+.cortinaola {position: absolute;
+    top: -110%;
+    animation-name: desplazamientoola;
+    animation-duration: 3s;
+    animation-direction: alternate;
+animation-delay: 1s;}
+
+.cortinaola img{width: 1375px;}    
+
+.peces div {display: flex; position: absolute; animation-name: parrafo; animation-duration: 9s;
+  }
+.peces img {width: 20%;}
+
+
+
+
+.pez1 img {animation-name: pecesizquierda;
+    animation-duration:  0.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in;}
+
+.pez2 img {animation-name: pecesizquierda;
+    animation-duration:  0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    
+  }
+
+.pez4 img {animation-name: pecesizquierda;
+    animation-duration:  0.5s;animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+
+.pez5 img  {animation-name: pecesizquierda;
+animation-duration:  0.5s;animation-iteration-count: infinite;
+animation-direction: alternate;}
+
+.pez6 img { animation-name: pecesizquierda; 
+    animation-duration:  0.5s;animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    
+   }    
+
+
+.pez5  {top: 40%;  width: 60%; left: 7%;
+    } 
+
+.pez6 {left: 15%; top: 20%; width: 60%;}
+
+.pez2 {top: 65%; left: 15%; width: 50%;}
+
+.pez4 {left: 75%;top: 30%;width: 55%;}
+
+.pez1 {left: 75%; top: 70%;width: 80%;}
+
+.texto p {text-align: center; font-size: 30px; color: cornflowerblue;}
+
+.texto{ position: absolute; top: 32%; left: 23%;animation-name: parrafo;animation-duration:  8s;}
+
+
+.botones { position: absolute; top: 72%; left: 37%;display: flex; 
+    padding: 2%; animation-name: parrafo;animation-duration:  8s;;
+
+}
+
+.boton1 {padding: 2%;width: 150px; background-color: coral; margin-right: 3%;}
+.boton1 p:hover {color: indianred;}
+.boton2 {padding: 2%;width: 150px; background-color:indianred; }
+.boton2 p:hover {color: coral;}
+.botones p {text-align: center; color:white;}
+
+@keyframes pecesizquierda {
+
+        0% {
+            transform:rotate(0turn)}
+
+        100% {
+            transform: rotate(0.1turn);
+            
+        }   
+    }
+    
+@keyframes parrafo {
+
+    0% {
+        opacity: 0;}
+
+    100% {
+        opacity: 100% ;
+    }
+}
+
+@keyframes desplazamientoola {
+
+    0% {
+       top: -300px;}
+
+    100% {
+        top: 2px;
+    }
+}       
+
