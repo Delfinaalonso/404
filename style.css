@@ -4,11 +4,12 @@
     background-position:center center ;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Oswald', sans-serif;}
+    font-family: 'Oswald', sans-serif;
+overflow: hidden;}
 
 
 .contenedor {animation-name: contenedor;
-    animation-duration:  7s;}
+    animation-duration:  9s;}
 
 .cortinaola {position: absolute;
     top: -210%;
@@ -18,10 +19,9 @@
     
 }
 
-.cortinaola img{width: 1349px;}    
+.cortinaola img{width: 1365px;}    
 
-.peces div {display: flex; position: absolute; animation-name: parrafo;
-     animation-duration: 6s;}
+.peces div {display: flex; position: absolute; }
 .peces img {width: 100%;}
 
 
@@ -71,18 +71,19 @@ animation-direction: alternate;}
 
 .texto p {text-align: center; font-size: 30px; color: cornflowerblue;}
 
-.texto{ position: absolute; top: 32%; left: 23%;animation-name: parrafo;animation-duration:  8s;}
+.texto{ position: absolute; top: 32%; left: 23%;}
 
 
 .botones { position: absolute; top: 72%; left: 37%;display: flex; 
-    padding: 2%; animation-name: parrafo;animation-duration:  8s;;
-
+    padding: 2%;
 }
 
-.boton1 {padding: 2%;width: 150px; background-color: coral; margin-right: 3%;}
-.boton1 p:hover {color: indianred;}
-.boton2 {padding: 2%;width: 150px; background-color:indianred; }
-.boton2 p:hover {color: coral;}
+
+
+.boton1 {padding: 2%;width: 150px; background-color: coral; margin-right: 3%;  }
+.boton1 p:hover {color: indianred; transform: scale(1.2, 1.2);}
+.boton2 {padding: 2%;width: 150px; background-color:indianred;  }
+.boton2 p:hover {color: coral; transform: scale(1.2, 1.2);}
 .botones p {text-align: center; color:white;}
 
 @keyframes pecesizquierda {
@@ -96,15 +97,7 @@ animation-direction: alternate;}
         }   
     }
     
-@keyframes parrafo {
 
-    0% {
-        opacity: 0;}
-
-    100% {
-        opacity: 100% ;
-    }
-}
 
 @keyframes desplazamientoola {
 
@@ -125,9 +118,11 @@ animation-direction: alternate;}
 @keyframes contenedor {
 
     0% {
-        opacity:100%;}
+        opacity:0;}
+
+
 
     100% {
-        opacity:0% ;
+        opacity:100% ;
     }
 }
