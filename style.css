@@ -7,18 +7,22 @@
     font-family: 'Oswald', sans-serif;}
 
 
+.contenedor {animation-name: contenedor;
+    animation-duration:  7s;}
+
 .cortinaola {position: absolute;
-    top: -110%;
+    top: -210%;
     animation-name: desplazamientoola;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-direction: alternate;
-animation-delay: 1s;}
+    
+}
 
-.cortinaola img{width: 1375px;}    
+.cortinaola img{width: 1349px;}    
 
-.peces div {display: flex; position: absolute; animation-name: parrafo; animation-duration: 9s;animation-delay: 2s;
-  }
-.peces img {width: 20%;}
+.peces div {display: flex; position: absolute; animation-name: parrafo;
+     animation-duration: 6s;}
+.peces img {width: 100%;}
 
 
 
@@ -27,7 +31,8 @@ animation-delay: 1s;}
     animation-duration:  0.5s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
-animation-timing-function: ease-in;}
+animation-timing-function: ease-in;
+}
 
 .pez2 img {animation-name: pecesizquierda;
     animation-duration:  0.5s;
@@ -54,16 +59,15 @@ animation-direction: alternate;}
    }    
 
 
-.pez5  {top: 40%;  width: 60%; left: 7%;
-    } 
+.pez6 {left: 17%; top: 20%; width: 13%;}
 
-.pez6 {left: 15%; top: 20%; width: 60%;}
+.pez5  {top: 40%;  width: 13%; left: 7%;} 
 
-.pez2 {top: 65%; left: 15%; width: 50%;}
+.pez2 {top: 65%; left: 15%; width: 13%;}
 
-.pez4 {left: 75%;top: 30%;width: 55%;}
+.pez4 {left: 72%;top: 28%;width: 10%;}
 
-.pez1 {left: 75%; top: 70%;width: 80%;}
+.pez1 {left: 75%; top: 65%;width: 17%;}
 
 .texto p {text-align: center; font-size: 30px; color: cornflowerblue;}
 
@@ -105,10 +109,25 @@ animation-direction: alternate;}
 @keyframes desplazamientoola {
 
     0% {
-       top: -300px;}
+       top:-210px;}
+
+
+    50% {  top: 5px
+
+    }
+       
 
     100% {
-        top: 2px;
+        top: -810px;
     }
 }       
 
+@keyframes contenedor {
+
+    0% {
+        opacity:100%;}
+
+    100% {
+        opacity:0% ;
+    }
+}
